@@ -21,4 +21,8 @@ extension Image {
         static let shop = Image("shopImage")
         static let settings = Image("settingsImage")
     }
+
+    enum CollectionScreen {
+        static let notifications = Image("notifications")
+    }
 }

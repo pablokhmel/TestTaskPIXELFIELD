@@ -28,6 +28,9 @@
 		FAA58D7C2BAF433400A20FB6 /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D7B2BAF433400A20FB6 /* SignInTextField.swift */; };
 		FAA58D812BAF456800A20FB6 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D802BAF456800A20FB6 /* MainScreen.swift */; };
 		FAA58D832BAF4A6D00A20FB6 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D822BAF4A6D00A20FB6 /* TabbarView.swift */; };
+		FAA58D862BAF4F9E00A20FB6 /* CollectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D852BAF4F9E00A20FB6 /* CollectionScreen.swift */; };
+		FAA58D882BAF58C400A20FB6 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D872BAF58C400A20FB6 /* CollectionViewModel.swift */; };
+		FAA58D8B2BAF5A3400A20FB6 /* Items.json in Resources */ = {isa = PBXBuildFile; fileRef = FAA58D8A2BAF5A3400A20FB6 /* Items.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		FAA58D7B2BAF433400A20FB6 /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
 		FAA58D802BAF456800A20FB6 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		FAA58D822BAF4A6D00A20FB6 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		FAA58D852BAF4F9E00A20FB6 /* CollectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionScreen.swift; sourceTree = "<group>"; };
+		FAA58D872BAF58C400A20FB6 /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		FAA58D8A2BAF5A3400A20FB6 /* Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 		FAA58D582BAF009700A20FB6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				FAA58D892BAF5A1C00A20FB6 /* Data */,
 				FAA58D642BAF064500A20FB6 /* Fonts */,
 				FAA58D592BAF00B800A20FB6 /* Images.swift */,
 				FAA58D5B2BAF00C400A20FB6 /* Colors.swift */,
@@ -121,6 +128,7 @@
 		FAA58D5D2BAF011300A20FB6 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FAA58D842BAF4F8600A20FB6 /* CollectionScreen */,
 				FAA58D7D2BAF43D500A20FB6 /* MainScreen */,
 				FAA58D742BAF1E1B00A20FB6 /* SignInScreen */,
 				FAA58D5E2BAF011E00A20FB6 /* WelcomeScreen */,
@@ -192,6 +200,23 @@
 			path = MainScreen;
 			sourceTree = "<group>";
 		};
+		FAA58D842BAF4F8600A20FB6 /* CollectionScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FAA58D852BAF4F9E00A20FB6 /* CollectionScreen.swift */,
+				FAA58D872BAF58C400A20FB6 /* CollectionViewModel.swift */,
+			);
+			path = CollectionScreen;
+			sourceTree = "<group>";
+		};
+		FAA58D892BAF5A1C00A20FB6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FAA58D8A2BAF5A3400A20FB6 /* Items.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,6 +279,7 @@
 				FAA58D732BAF120300A20FB6 /* EBGaramond-SemiBold.ttf in Resources */,
 				FAA58D502BAEF72000A20FB6 /* Preview Assets.xcassets in Resources */,
 				FAA58D6F2BAF103800A20FB6 /* Lato-Regular.ttf in Resources */,
+				FAA58D8B2BAF5A3400A20FB6 /* Items.json in Resources */,
 				FAA58D4D2BAEF72000A20FB6 /* Assets.xcassets in Resources */,
 				FAA58D662BAF068600A20FB6 /* EBGaramond-Medium.ttf in Resources */,
 			);
@@ -266,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA58D882BAF58C400A20FB6 /* CollectionViewModel.swift in Sources */,
 				FAA58D692BAF06B200A20FB6 /* Fonts.swift in Sources */,
 				FAA58D762BAF1E7400A20FB6 /* SignInScreen.swift in Sources */,
 				FAA58D632BAF016300A20FB6 /* BackgroundView.swift in Sources */,
@@ -279,6 +306,7 @@
 				FAA58D712BAF109100A20FB6 /* LatoText.swift in Sources */,
 				FAA58D7A2BAF271F00A20FB6 /* AppLabelPair.swift in Sources */,
 				FAA58D812BAF456800A20FB6 /* MainScreen.swift in Sources */,
+				FAA58D862BAF4F9E00A20FB6 /* CollectionScreen.swift in Sources */,
 				FAA58D7C2BAF433400A20FB6 /* SignInTextField.swift in Sources */,
 				FAA58D492BAEF71D00A20FB6 /* test_taskApp.swift in Sources */,
 			);

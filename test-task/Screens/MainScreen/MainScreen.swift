@@ -12,15 +12,29 @@ import SwiftUI
 struct MainScreen: View {
     @State var chosenScreen = TabbarScreen.collection
     var body: some View {
-        GeometryReader { geo in
-            VStack {
-                Spacer()
-                TabbarView(chosenScreen: $chosenScreen)
+        VStack(spacing: 0) {
+            TabView {
+                switch chosenScreen {
+                case .scan:
+                    Spacer()
+                        .background(.red)
+                case .collection:
+                    CollectionScreen()
+                case .shop:
+                    Spacer()
+                        .background(.green)
+                case .settings:
+                    Spacer()
+                        .background(.blue)
+                }
             }
-            .background(
-                Color.darkBackground
-            )
+            .tabViewStyle(PageTabViewStyle())
+            .edgesIgnoringSafeArea(.all)
+            TabbarView(chosenScreen: $chosenScreen)
         }
+        .background(
+            Color.darkBackground
+        )
     }
 }
 

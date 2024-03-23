@@ -23,4 +23,8 @@ extension Color {
     enum SignIn {
         static let background = Color.init(red: 14 / 255, green: 28 / 255, blue: 33 / 255)
     }
+
+    enum Collection {
+        static let itemBackground = Color.init(red: 22 / 255, green: 35 / 255, blue: 40 / 255)
+    }
 }
