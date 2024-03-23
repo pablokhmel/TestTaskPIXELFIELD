@@ -26,6 +26,8 @@
 		FAA58D782BAF25C200A20FB6 /* AppYellowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D772BAF25C200A20FB6 /* AppYellowButton.swift */; };
 		FAA58D7A2BAF271F00A20FB6 /* AppLabelPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D792BAF271F00A20FB6 /* AppLabelPair.swift */; };
 		FAA58D7C2BAF433400A20FB6 /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D7B2BAF433400A20FB6 /* SignInTextField.swift */; };
+		FAA58D812BAF456800A20FB6 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D802BAF456800A20FB6 /* MainScreen.swift */; };
+		FAA58D832BAF4A6D00A20FB6 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D822BAF4A6D00A20FB6 /* TabbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		FAA58D772BAF25C200A20FB6 /* AppYellowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppYellowButton.swift; sourceTree = "<group>"; };
 		FAA58D792BAF271F00A20FB6 /* AppLabelPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabelPair.swift; sourceTree = "<group>"; };
 		FAA58D7B2BAF433400A20FB6 /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
+		FAA58D802BAF456800A20FB6 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		FAA58D822BAF4A6D00A20FB6 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		FAA58D5D2BAF011300A20FB6 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FAA58D7D2BAF43D500A20FB6 /* MainScreen */,
 				FAA58D742BAF1E1B00A20FB6 /* SignInScreen */,
 				FAA58D5E2BAF011E00A20FB6 /* WelcomeScreen */,
 			);
@@ -176,6 +181,15 @@
 				FAA58D7B2BAF433400A20FB6 /* SignInTextField.swift */,
 			);
 			path = SignInScreen;
+			sourceTree = "<group>";
+		};
+		FAA58D7D2BAF43D500A20FB6 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FAA58D802BAF456800A20FB6 /* MainScreen.swift */,
+				FAA58D822BAF4A6D00A20FB6 /* TabbarView.swift */,
+			);
+			path = MainScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +269,7 @@
 				FAA58D692BAF06B200A20FB6 /* Fonts.swift in Sources */,
 				FAA58D762BAF1E7400A20FB6 /* SignInScreen.swift in Sources */,
 				FAA58D632BAF016300A20FB6 /* BackgroundView.swift in Sources */,
+				FAA58D832BAF4A6D00A20FB6 /* TabbarView.swift in Sources */,
 				FAA58D4B2BAEF71D00A20FB6 /* ContentView.swift in Sources */,
 				FAA58D782BAF25C200A20FB6 /* AppYellowButton.swift in Sources */,
 				FAA58D6B2BAF0F1500A20FB6 /* GaramondText.swift in Sources */,
@@ -263,6 +278,7 @@
 				FAA58D5A2BAF00B800A20FB6 /* Images.swift in Sources */,
 				FAA58D712BAF109100A20FB6 /* LatoText.swift in Sources */,
 				FAA58D7A2BAF271F00A20FB6 /* AppLabelPair.swift in Sources */,
+				FAA58D812BAF456800A20FB6 /* MainScreen.swift in Sources */,
 				FAA58D7C2BAF433400A20FB6 /* SignInTextField.swift in Sources */,
 				FAA58D492BAEF71D00A20FB6 /* test_taskApp.swift in Sources */,
 			);
