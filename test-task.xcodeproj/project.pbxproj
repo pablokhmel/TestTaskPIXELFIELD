@@ -25,6 +25,7 @@
 		FAA58D762BAF1E7400A20FB6 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D752BAF1E7400A20FB6 /* SignInScreen.swift */; };
 		FAA58D782BAF25C200A20FB6 /* AppYellowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D772BAF25C200A20FB6 /* AppYellowButton.swift */; };
 		FAA58D7A2BAF271F00A20FB6 /* AppLabelPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D792BAF271F00A20FB6 /* AppLabelPair.swift */; };
+		FAA58D7C2BAF433400A20FB6 /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D7B2BAF433400A20FB6 /* SignInTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FAA58D752BAF1E7400A20FB6 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
 		FAA58D772BAF25C200A20FB6 /* AppYellowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppYellowButton.swift; sourceTree = "<group>"; };
 		FAA58D792BAF271F00A20FB6 /* AppLabelPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabelPair.swift; sourceTree = "<group>"; };
+		FAA58D7B2BAF433400A20FB6 /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA58D752BAF1E7400A20FB6 /* SignInScreen.swift */,
+				FAA58D7B2BAF433400A20FB6 /* SignInTextField.swift */,
 			);
 			path = SignInScreen;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				FAA58D5A2BAF00B800A20FB6 /* Images.swift in Sources */,
 				FAA58D712BAF109100A20FB6 /* LatoText.swift in Sources */,
 				FAA58D7A2BAF271F00A20FB6 /* AppLabelPair.swift in Sources */,
+				FAA58D7C2BAF433400A20FB6 /* SignInTextField.swift in Sources */,
 				FAA58D492BAEF71D00A20FB6 /* test_taskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
