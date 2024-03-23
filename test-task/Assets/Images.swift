@@ -12,5 +12,6 @@ extension Image {
 
     enum SignIn {
         static let backArrow = Image("backArrow")
+        static let eyeImage = Image("eye")
     }
 }

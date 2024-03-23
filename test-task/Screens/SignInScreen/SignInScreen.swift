@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SignInScreen: View {
-    @State var email: String = ""
+    @State var emailString: String = ""
+    @State var passwordString: String = ""
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
@@ -27,8 +28,8 @@ struct SignInScreen: View {
             GaramondText(text: "Sign In", size: 32, weight: .medium)
 
             VStack(spacing: 16) {
-                SignInTextField()
-                SignInTextField()
+                SignInTextField(title: "Email", text: $emailString)
+                SignInTextField(title: "Password", text: $passwordString, hasSecurity: true)
             }
 
             AppYellowButton(title: "Continue") {
@@ -36,7 +37,7 @@ struct SignInScreen: View {
             }
 
             AppLabelPair(firstTitle: "Can't sign in?", secondTitle: "Recover password") {
-                EmptyView()
+                
             }
             .frame(maxWidth: .infinity)
 
@@ -54,10 +55,38 @@ struct SignInScreen: View {
 }
 
 struct SignInTextField: View {
+    var title: String
+    @Binding var text: String
+    var hasSecurity: Bool = false
+
+    @State var isSecured = true
+
     var body: some View {
         VStack(alignment: .leading) {
-            LatoText(text: "Email", size: 12, color: Color.appYellowColor)
-            LatoText(text: "Base")
+            LatoText(text: title, size: 12, color: Color.appYellowColor)
+            HStack {
+                if hasSecurity && isSecured {
+                    SecureField(text: $text) {
+                        LatoText(text: text)
+                    }
+                    .foregroundStyle(Color.white)
+                } else {
+                    TextField(text: $text) {
+                        LatoText(text: text)
+                    }
+                    .foregroundStyle(Color.white)
+                }
+
+
+                if hasSecurity {
+                    Button {
+                        isSecured = !isSecured
+                    } label: {
+                        Image.SignIn.eyeImage
+                    }
+                }
+            }
+
             Color.appYellowColor
                 .frame(height: 1)
         }
