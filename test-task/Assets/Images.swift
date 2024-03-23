@@ -9,4 +9,8 @@ import SwiftUI
 
 extension Image {
     static let backgrounds = Image("backgrounds")
+
+    enum SignIn {
+        static let backArrow = Image("backArrow")
+    }
 }

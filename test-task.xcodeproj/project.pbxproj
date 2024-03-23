@@ -22,6 +22,9 @@
 		FAA58D6F2BAF103800A20FB6 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA58D6E2BAF103800A20FB6 /* Lato-Regular.ttf */; };
 		FAA58D712BAF109100A20FB6 /* LatoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D702BAF109100A20FB6 /* LatoText.swift */; };
 		FAA58D732BAF120300A20FB6 /* EBGaramond-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA58D722BAF120300A20FB6 /* EBGaramond-SemiBold.ttf */; };
+		FAA58D762BAF1E7400A20FB6 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D752BAF1E7400A20FB6 /* SignInScreen.swift */; };
+		FAA58D782BAF25C200A20FB6 /* AppYellowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D772BAF25C200A20FB6 /* AppYellowButton.swift */; };
+		FAA58D7A2BAF271F00A20FB6 /* AppLabelPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA58D792BAF271F00A20FB6 /* AppLabelPair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		FAA58D6E2BAF103800A20FB6 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		FAA58D702BAF109100A20FB6 /* LatoText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatoText.swift; sourceTree = "<group>"; };
 		FAA58D722BAF120300A20FB6 /* EBGaramond-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-SemiBold.ttf"; sourceTree = "<group>"; };
+		FAA58D752BAF1E7400A20FB6 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		FAA58D772BAF25C200A20FB6 /* AppYellowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppYellowButton.swift; sourceTree = "<group>"; };
+		FAA58D792BAF271F00A20FB6 /* AppLabelPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabelPair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		FAA58D5D2BAF011300A20FB6 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FAA58D742BAF1E1B00A20FB6 /* SignInScreen */,
 				FAA58D5E2BAF011E00A20FB6 /* WelcomeScreen */,
 			);
 			path = Screens;
@@ -128,6 +135,8 @@
 				FAA58D622BAF016300A20FB6 /* BackgroundView.swift */,
 				FAA58D6A2BAF0F1500A20FB6 /* GaramondText.swift */,
 				FAA58D702BAF109100A20FB6 /* LatoText.swift */,
+				FAA58D772BAF25C200A20FB6 /* AppYellowButton.swift */,
+				FAA58D792BAF271F00A20FB6 /* AppLabelPair.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -156,6 +165,14 @@
 				FAA58D6E2BAF103800A20FB6 /* Lato-Regular.ttf */,
 			);
 			path = Lato;
+			sourceTree = "<group>";
+		};
+		FAA58D742BAF1E1B00A20FB6 /* SignInScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FAA58D752BAF1E7400A20FB6 /* SignInScreen.swift */,
+			);
+			path = SignInScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,13 +250,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA58D692BAF06B200A20FB6 /* Fonts.swift in Sources */,
+				FAA58D762BAF1E7400A20FB6 /* SignInScreen.swift in Sources */,
 				FAA58D632BAF016300A20FB6 /* BackgroundView.swift in Sources */,
 				FAA58D4B2BAEF71D00A20FB6 /* ContentView.swift in Sources */,
+				FAA58D782BAF25C200A20FB6 /* AppYellowButton.swift in Sources */,
 				FAA58D6B2BAF0F1500A20FB6 /* GaramondText.swift in Sources */,
 				FAA58D5C2BAF00C400A20FB6 /* Colors.swift in Sources */,
 				FAA58D602BAF012D00A20FB6 /* WelcomeScreen.swift in Sources */,
 				FAA58D5A2BAF00B800A20FB6 /* Images.swift in Sources */,
 				FAA58D712BAF109100A20FB6 /* LatoText.swift in Sources */,
+				FAA58D7A2BAF271F00A20FB6 /* AppLabelPair.swift in Sources */,
 				FAA58D492BAEF71D00A20FB6 /* test_taskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
