@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct SignInScreen: View {
-    @State var email: String
+    @State var email: String = ""
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
     var body: some View {
         VStack(alignment: .leading, spacing: 40) {
             HStack {
                 Button {
-
+                    presentationMode.wrappedValue.dismiss()
                 } label: {
                     Image.SignIn.backArrow
                 }
@@ -34,7 +36,7 @@ struct SignInScreen: View {
             }
 
             AppLabelPair(firstTitle: "Can't sign in?", secondTitle: "Recover password") {
-
+                EmptyView()
             }
             .frame(maxWidth: .infinity)
 
@@ -63,5 +65,5 @@ struct SignInTextField: View {
 }
 
 #Preview {
-    SignInScreen(email: "yep")
+    SignInScreen()
 }

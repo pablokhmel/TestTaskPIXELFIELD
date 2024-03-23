@@ -7,16 +7,17 @@
 
 import SwiftUI
 
-struct AppLabelPair: View {
+struct AppLabelPair<Content : View>: View {
     var firstTitle: String
     var secondTitle: String
-    var action: () -> Void
+    @ViewBuilder var content: Content
 
     var body: some View {
         HStack(spacing: 24) {
             LatoText(text: firstTitle, color: Color.secondaryLabelColor)
-            Button {
-                action()
+            NavigationLink {
+                content
+                    .navigationBarBackButtonHidden()
             } label: {
                 GaramondText(text: secondTitle, weight: .medium, color: Color.Welcome.signInButton)
             }
@@ -26,6 +27,6 @@ struct AppLabelPair: View {
 
 #Preview {
     AppLabelPair(firstTitle: "first", secondTitle: "second") {
-        
+        Text("Hello world")
     }
 }
