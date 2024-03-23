@@ -5,7 +5,8 @@
 //  Created by MacBook on 23.03.2024.
 //
 
-import Foundation
+import Network
+import SwiftUI
 
 class CollectionViewModel: ObservableObject {
     @Published var items: [CollectionItemDataModel] = []
@@ -16,7 +17,10 @@ class CollectionViewModel: ObservableObject {
                 try await Task.sleep(nanoseconds: 1_000_000_000)
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                items = try decoder.decode([CollectionItemDataModel].self, from: data)
+
+                try await MainActor.run {
+                    items = try decoder.decode([CollectionItemDataModel].self, from: data)
+                }
             } catch {
                 print("error:\(error)")
             }

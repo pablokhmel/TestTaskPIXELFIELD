@@ -4,6 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Lato-Bold.ttf</string>
 		<string>EBGaramond-SemiBold.ttf</string>
 		<string>Lato-Regular.ttf</string>
 		<string>EBGaramond-Medium.ttf</string>

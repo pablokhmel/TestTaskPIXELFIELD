@@ -32,9 +32,20 @@ struct SignInScreen: View {
                 SignInTextField(title: "Password", text: $passwordString, hasSecurity: true)
             }
 
-            AppYellowButton(title: "Continue") {
-
+            NavigationLink {
+                MainScreen()
+                    .navigationBarBackButtonHidden()
+            } label: {
+                GaramondText(text: "Continue", weight: .semibold, color: Color.black)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 56)
+                    .background(
+                        Color.appYellowColor
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
             }
+
+
 
             AppLabelPair(firstTitle: "Can't sign in?", secondTitle: "Recover password") {
                 

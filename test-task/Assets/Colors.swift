@@ -13,6 +13,7 @@ extension Color {
     static let appYellowColor = Color.init(red: 212 / 255, green: 154 / 255, blue: 0 / 255)
     static let secondaryLabelColor = Color.init(red: 184 / 255, green: 189 / 255, blue: 191 / 255)
     static let darkBackground = Color.init(red: 17 / 255, green: 28 / 255, blue: 32 / 255)
+    static let blueBackground = Color.init(red: 22 / 255, green: 35 / 255, blue: 40 / 255)
 
     // Welcome
     enum Welcome {
@@ -22,9 +23,5 @@ extension Color {
 
     enum SignIn {
         static let background = Color.init(red: 14 / 255, green: 28 / 255, blue: 33 / 255)
-    }
-
-    enum Collection {
-        static let itemBackground = Color.init(red: 22 / 255, green: 35 / 255, blue: 40 / 255)
     }
 }

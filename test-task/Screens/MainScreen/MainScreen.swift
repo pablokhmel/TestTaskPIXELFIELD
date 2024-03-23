@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct MainScreen: View {
     @State var chosenScreen = TabbarScreen.collection
     var body: some View {
@@ -29,8 +27,11 @@ struct MainScreen: View {
                 }
             }
             .tabViewStyle(PageTabViewStyle())
-            .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea([.bottom])
             TabbarView(chosenScreen: $chosenScreen)
+        }
+        .onAppear {
+            UserDefaults.standard.set(true, forKey: "has_logged")
         }
         .background(
             Color.darkBackground

@@ -25,4 +25,10 @@ extension Image {
     enum CollectionScreen {
         static let notifications = Image("notifications")
     }
+
+    enum FullInfoScreen {
+        static let close = Image("closeButton")
+        static let genuine = Image("genuineIcon")
+        static let moreInfo = Image("moreInfo")
+    }
 }

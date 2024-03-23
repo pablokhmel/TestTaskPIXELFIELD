@@ -11,6 +11,7 @@ enum FontWeight {
     case regular
     case medium
     case semibold
+    case bold
 }
 
 extension Font {
@@ -31,6 +32,9 @@ extension Font {
         switch weight {
         case .regular:
             Font.custom("Lato-Regular", size: size)
+
+        case .bold:
+            Font.custom("Lato-Bold", size: size)
 
         default:
             Font.system(size: size)

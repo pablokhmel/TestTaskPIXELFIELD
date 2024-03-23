@@ -11,7 +11,11 @@ import SwiftUI
 struct test_taskApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if UserDefaults.standard.bool(forKey: "has_logged") {
+                MainScreen()
+            } else {
+                WelcomeView()
+            }
         }
     }
 }
